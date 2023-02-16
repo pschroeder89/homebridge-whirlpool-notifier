@@ -1,0 +1,44 @@
+{
+    "name": "homebridge-whirlpool-notifier",
+    "version": "0.0.1",
+    "description": "Adding notifications for Whirlpool / Maytag washers",
+    "license": "MIT",
+    "keywords": [
+        "homebridge-plugin",
+        "maytag",
+        "whirlpool",
+        "automation",
+        "homebridge",
+        "notifications"
+    ],
+    "scripts": {
+        "remove-link": "npm -g remove homebridge-whirlpool-notifier",
+        "prepublishOnly": "npm run lint && npm run build",
+        "watch": "npm run build && npm link && nodemon",
+        "lint": "eslint src/**.ts --max-warnings=0",
+        "build": "rimraf ./dist && tsc"
+      },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/pschroeder89/homebridge-whirlpool-notifier.git"
+    },
+    "bugs": {
+        "url": "http://github.com/pschroeder89/homebridge-whirlpool-notifier/issues"
+    },
+    "engines": {
+        "node": ">=0.12.0",
+        "homebridge": ">=0.2.0"
+    },
+    "homepage": "https://github.com/pschroeder89/homebridge-whirlpool-notifier#readme",
+    "author": "Paul Schroeder",
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/pschroeder89"
+        },
+        {
+            "type": "paypal",
+            "url": "https://www.paypal.me/pschroeder89"
+        }
+    ]
+}
